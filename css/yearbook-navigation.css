@@ -1,0 +1,5 @@
+/* Right-side Yearbook action alongside the current navigation. */
+.navbar-yearbook { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; min-height: 42px; margin: 8px 0 8px auto; padding: 9px 18px; border: 1px solid #d4af37; border-radius: 6px; color: #752014; background: #f7d774; font-weight: 700; font-size: 14px; text-decoration: none; }
+.navbar-yearbook:hover { color: #752014; background: #ffe49a; }
+.navbar-yearbook:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+@media (max-width: 991px) { .navbar-yearbook { order: 2; margin: 8px 0 8px auto; padding: 8px 14px; min-height: 40px; } }

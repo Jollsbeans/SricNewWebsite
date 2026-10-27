@@ -1,0 +1,33 @@
+/* III@SRIC uses the existing nested details/summary controls. */
+#school-links > .iii-sric-menu:not([open]) > .school-dropdown-list,
+#school-links > .iii-sric-menu .school-submenu:not([open]) > .school-dropdown-list {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  #school-links > .iii-sric-menu { position: relative; }
+  #school-links > .iii-sric-menu > .school-dropdown-list {
+    display: block;
+    columns: auto;
+    grid-template-columns: none;
+    width: 430px;
+    max-width: calc(100vw - 64px);
+    left: 0;
+    right: auto;
+    top: 100%;
+  }
+  #school-links > .iii-sric-menu .school-submenu > .school-dropdown-list {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  #school-links > .iii-sric-menu > .school-dropdown-list {
+    display: block;
+    position: static;
+    columns: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}

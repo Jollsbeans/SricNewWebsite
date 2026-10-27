@@ -1,0 +1,20 @@
+.facilities-page { background: #fff; }
+.facilities-wrap { max-width: 1240px; padding: 48px 28px; }
+.facilities-kicker { display: block; color: #ad261b; font-size: 11px; font-weight: 700; letter-spacing: .14em; margin-bottom: 14px; }
+.facilities-page h2 { font-size: clamp(30px, 4vw, 44px); font-weight: 700; margin-bottom: 16px; }
+.facilities-page p { color: #58554e; line-height: 1.8; margin-bottom: 28px; }
+.facilities-slider { border: 1px solid #e3d6b8; border-radius: 14px; overflow: hidden; background: #faf8f4; }
+.facilities-slider img { display: block; width: 100%; height: clamp(280px, 45vw, 560px); object-fit: contain; }
+.facilities-caption { display: flex; align-items: center; gap: 20px; border-top: 1px solid #e3d6b8; padding: 22px 28px; }
+.facilities-caption span { color: #ad261b; font-size: 13px; white-space: nowrap; }
+.facilities-caption h3 { font-size: 19px; margin: 0; line-height: 1.5; }
+.facilities-slider .carousel-control-prev, .facilities-slider .carousel-control-next { width: 9%; bottom: 76px; background: transparent; border: 0; font-size: 38px; color: white; opacity: 1; text-shadow: 0 1px 5px #000; }
+.facilities-select { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.facilities-select button { background: #faf8f4; border: 1px solid #e3d6b8; border-radius: 22px; padding: 9px 15px; color: #5c5143; font-size: 11px; line-height: 1.6; }
+.facilities-select button:hover { background: #c92318; border-color: #c92318; color: white; }
+.facilities-page button:focus-visible { outline: 3px solid #d4af37; outline-offset: -3px; }
+@media (max-width: 575px) {
+  .facilities-wrap { padding: 32px 20px; }
+  .facilities-caption { padding: 18px; gap: 12px; }
+  .facilities-caption h3 { font-size: 15px; }
+}

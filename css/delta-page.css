@@ -1,0 +1,37 @@
+.dalta-page { background: #fff; color: #252525; }
+.dalta-wrap { max-width: 1240px; padding: 0 28px; }
+.dalta-hero { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 44px; padding: 48px 0 30px; }
+.dalta-kicker { display: block; font-size: 11px; letter-spacing: .14em; font-weight: 700; color: #a8241b; line-height: 1.7; margin-bottom: 14px; }
+.dalta-page h2 { font-size: clamp(28px, 3vw, 37px); line-height: 1.3; font-weight: 700; margin-bottom: 24px; }
+.dalta-hero h2 { font-size: clamp(33px, 3.7vw, 46px); }
+.dalta-page p, .dalta-page li { font-size: 15px; line-height: 1.9; color: #62594c; }
+.dalta-image { border: 1px solid #e0d2b4; border-radius: 14px; background: #faf8f3; padding: 8px; margin: 0; min-width: 0; }
+.dalta-image img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: contain; border-radius: 8px; }
+.dalta-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 26px; }
+.dalta-button { display: inline-flex; align-items: center; padding: 13px 22px; border-radius: 6px; background: #c92318; color: white; font-size: 14px; font-weight: 700; }
+.dalta-button:hover { background: #a42117; color: white; }
+.dalta-actions > a:not(.dalta-button) { font-size: 14px; color: #a8241b; text-decoration: underline; text-underline-offset: 4px; }
+.dalta-jump { display: flex; flex-wrap: wrap; gap: 10px; padding: 22px 0 28px; border-bottom: 1px solid #e4dac4; }
+.dalta-jump a { padding: 9px 15px; border: 1px solid #e0d2b4; border-radius: 24px; font-size: 13px; color: #665846; }
+.dalta-jump a:hover { background: #c92318; color: white; border-color: #c92318; }
+.dalta-programs { padding: 44px 0; }
+.dalta-card { padding: 28px; background: #faf8f3; border: 1px solid #e0d2b4; border-radius: 12px; scroll-margin-top: calc(var(--site-header-height, 180px) + 24px); }
+.dalta-card-heading { display: flex; gap: 18px; align-items: start; margin-bottom: 18px; }
+.dalta-card-heading > span { color: #b1261d; font-size: 17px; font-weight: 700; padding-top: 3px; }
+.dalta-card h3 { font-size: 21px; font-weight: 700; line-height: 1.5; margin: 0; }
+.dalta-card-heading p { margin: 8px 0 0; font-size: 13px; }
+.dalta-card h4 { font-size: 14px; font-weight: 600; line-height: 1.7; margin-bottom: 10px; }
+.dalta-card ul { margin: 0; padding-left: 20px; }
+.dalta-card li::marker { color: #b1261d; }
+.dalta-card li { padding: 6px 0; }
+.dalta-education { margin-bottom: 24px; border-top: 3px solid #c92318; }
+.dalta-education ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+.dalta-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.dalta-track + .dalta-track { border-top: 1px solid #e4dac4; padding-top: 20px; margin-top: 20px; }
+.dalta-cta { display: flex; align-items: center; justify-content: space-between; gap: 22px; flex-wrap: wrap; padding: 30px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; margin-bottom: 20px; }
+.dalta-cta h2 { font-size: 25px; margin: 0; }
+.dalta-page a:focus-visible { outline: 3px solid #d4af37; outline-offset: 4px; }
+@media (max-width: 991px) { .dalta-hero, .dalta-grid { grid-template-columns: 1fr; gap: 26px; } }
+@media (max-width: 575px) { .dalta-wrap { padding: 0 20px; } .dalta-hero, .dalta-programs { padding: 32px 0; } .dalta-education ul { grid-template-columns: 1fr; } .dalta-card, .dalta-cta { padding: 23px; } }
+
+.page-header { background-image: linear-gradient(#252525a6, #252525a6), url("../img/image2.jpg"); }

@@ -1,0 +1,40 @@
+/* Full-frame photos with readable captions inside the image area. */
+#header-carousel.school-carousel{background:#252525}
+#header-carousel.school-carousel .slide-layout{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:1fr;min-height:clamp(540px,48vw,780px);height:100%;max-width:none;margin:0;overflow:hidden}
+#header-carousel .slide-layout::before{content:"";position:absolute;inset:-32px;background-image:var(--slide-photo);background-size:cover;background-position:center;filter:blur(24px) brightness(.55);z-index:-1}
+#header-carousel.school-carousel .slide-media{position:absolute;inset:0;padding:0;display:block;background:transparent;align-self:stretch;min-height:0}
+#header-carousel.school-carousel .slide-media img{width:100%!important;height:100%!important;max-height:none!important;min-height:0!important;object-fit:contain!important;object-position:center;border-radius:0;position:static;aspect-ratio:auto!important}
+#header-carousel.school-carousel .slide-copy{position:relative;z-index:1;min-height:100%;width:100%;padding:clamp(36px,5vw,80px) max(76px,7vw);background:linear-gradient(90deg,rgba(9,10,12,.86) 0%,rgba(9,10,12,.68) 46%,rgba(9,10,12,.15) 100%);justify-content:center;align-items:flex-start;overflow:visible}
+#header-carousel.school-carousel .slide-copy>*{width:auto;max-width:min(760px,75%)}
+#header-carousel.school-carousel .slide-copy .slide-eyebrow{color:#ffe29a;margin-bottom:18px;letter-spacing:.14em}
+#header-carousel.school-carousel .slide-copy h1,#header-carousel.school-carousel .slide-copy h2{font-size:clamp(28px,3.4vw,54px)!important;line-height:1.15!important;color:#fff!important;text-wrap:balance;overflow-wrap:break-word;margin:0 0 20px;text-shadow:0 2px 12px #0006}
+#header-carousel.school-carousel .slide-copy p{color:#f4f2ec!important;line-height:1.65!important;margin:0 0 16px;text-shadow:0 1px 5px #0008}
+#header-carousel.school-carousel .slide-copy .slide-lead{font-size:clamp(16px,1.5vw,21px)!important;font-weight:600}
+#header-carousel.school-carousel .slide-copy .slide-description{display:block!important;font-size:clamp(14px,1.15vw,17px)!important}
+#header-carousel.school-carousel .slide-copy .enroll-btn{width:auto;max-width:100%;margin-top:8px;flex-shrink:0}
+#header-carousel .slide-arrows{z-index:3}
+#header-carousel .slide-arrows button{top:50%;background:#bd231be6}
+@media(max-width:767px){
+ #header-carousel.school-carousel .slide-layout{min-height:600px;grid-template-rows:1fr}
+ #header-carousel.school-carousel .slide-copy{padding:40px 58px;justify-content:flex-end;background:linear-gradient(180deg,#090a0c20 0%,#090a0c88 25%,#090a0ce8 100%)}
+ #header-carousel.school-carousel .slide-copy>*{max-width:100%}
+ #header-carousel.school-carousel .slide-copy h1,#header-carousel.school-carousel .slide-copy h2{font-size:clamp(25px,6vw,34px)!important;margin-bottom:16px}
+ #header-carousel.school-carousel .slide-copy .slide-eyebrow{font-size:10px;margin-bottom:14px}
+ #header-carousel.school-carousel .slide-copy .slide-lead{font-size:16px!important}
+ #header-carousel.school-carousel .slide-copy .slide-description{font-size:14px!important}
+ #header-carousel .slide-arrows button{top:50%;width:38px;height:46px}
+ #header-carousel .school-slide-prev{left:7px}#header-carousel .school-slide-next{right:7px}
+}
+@media(prefers-reduced-motion:reduce){#header-carousel.school-carousel .carousel-item.active .slide-layout{animation:none}}
+
+/* Edge-to-edge photo fill and plain white navigation arrows. */
+#header-carousel.school-carousel{width:100%;max-width:none;margin:0!important;padding:0!important;border:0;border-radius:0}
+#header-carousel.school-carousel .carousel-inner,#header-carousel.school-carousel .slide-layout{width:100%;max-width:none;margin:0!important;padding:0!important;border-radius:0}
+#header-carousel.school-carousel .slide-layout::before{display:none}
+#header-carousel.school-carousel .slide-media{inset:0;margin:0!important;padding:0!important}
+#header-carousel.school-carousel .slide-media img{object-fit:cover!important;object-position:center;width:100%!important;height:100%!important;margin:0!important;padding:0!important;border:0;border-radius:0}
+#header-carousel.school-carousel .slide-arrows button,
+#header-carousel.school-carousel .slide-arrows button:hover,
+#header-carousel.school-carousel .slide-arrows button:focus,
+#header-carousel.school-carousel .slide-arrows button:active{background:transparent!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#fff!important;font-size:42px;font-weight:400;line-height:1;min-width:44px;min-height:52px;padding:0;appearance:none}
+#header-carousel.school-carousel .slide-arrows button:focus-visible{outline:2px solid white;outline-offset:2px}

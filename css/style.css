@@ -1,0 +1,1854 @@
+/********** Template CSS **********/
+:root {
+    --primary: #f11808;
+    --secondary: #777777;
+    --light: #F8F8F8;
+    --dark: #252525;
+    --red: #f11808;
+    --gold:rgb(161, 161, 18);
+}
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-header {
+    width: 100%;
+    position:sticky;
+
+}
+
+/* =========================================================
+   SCHOOL LOGO + SLOGAN
+========================================================= */
+
+.school-slogan {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+/* School Logo */
+.school-slogan img {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+/* Alex Brush Slogan */
+.school-slogan span {
+    font-family: 'Alex Brush', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #f11808;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 42px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Search Form Focus */
+.search-form:focus-within {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.15);
+}
+
+/* Search Input */
+.search-input {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: transparent;
+}
+
+/* Placeholder */
+.search-input::placeholder {
+    color: #999999;
+}
+
+/* Search Button */
+.search-btn {
+    width: 45px;
+    height: 42px;
+    border: none;
+    outline: none;
+    background:var(--red);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Search Button Hover */
+.search-btn:hover {
+    background: #ea5160;
+}
+
+/* Search Icon */
+.search-btn i {
+    font-size: 16px;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .school-slogan img {
+        width: 60px;
+    }
+
+    .school-slogan span {
+        font-size: 30px;
+    }
+
+    .search-form {
+        width: 270px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .top-bar {
+        width: 100%;
+    }
+
+    .school-slogan {
+        gap: 10px;
+    }
+
+    .school-slogan img {
+        width: 55px;
+    }
+
+    .school-slogan span {
+        font-size: 26px;
+    }
+
+    .search-form {
+        width: 220px;
+        height: 40px;
+    }
+
+    .search-btn {
+        width: 42px;
+        height: 40px;
+    }
+}
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .school-slogan {
+        gap: 8px;
+    }
+
+    .school-slogan img {
+        width: 50px;
+    }
+
+    .school-slogan span {
+        font-size: 23px;
+    }
+
+    .search-form {
+        width: 190px;
+        height: 40px;
+    }
+
+    .search-btn {
+        width: 42px;
+        height: 40px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .school-slogan {
+        gap: 7px;
+    }
+
+    .school-slogan img {
+        width: 45px;
+    }
+
+    .school-slogan span {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    /* Change search bar into icon */
+    .search-form {
+        width: 42px;
+        height: 42px;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+        overflow: visible;
+    }
+
+    .search-form:focus-within {
+        border: none;
+        box-shadow: none;
+    }
+
+    /* Hide search input on mobile */
+    .search-input {
+        display: none;
+    }
+
+    /* Circular search button */
+    .search-btn {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-btn i {
+        font-size: 16px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .school-slogan {
+        gap: 5px;
+    }
+
+    .school-slogan img {
+        width: 40px;
+    }
+
+    .school-slogan span {
+        font-size: 17px;
+    }
+
+    .search-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .search-form {
+        width: 38px;
+        height: 38px;
+    }
+}
+.search-results {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Results Container */
+
+.search-result-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
+}
+
+.search-result-box h4 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Individual Result */
+
+.search-result-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item h5 {
+    margin: 0 0 5px;
+}
+
+.search-result-item h5 a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.search-result-item h5 a:hover {
+    color: #f11808;
+}
+
+.search-result-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* No Results */
+
+.no-results {
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
+}
+
+.no-results i {
+    font-size: 35px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.no-results h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.no-results p {
+    color: #777;
+}
+
+/* =========================================================
+   MOBILE SEARCH RESULTS
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .search-results {
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+
+    .search-result-box {
+        padding: 18px;
+    }
+
+    .search-result-box h4 {
+        font-size: 17px;
+    }
+
+    .search-result-item h5 a {
+        font-size: 17px;
+    }
+
+    .search-result-item p {
+        font-size: 13px;
+    }
+
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+
+.navbar {
+    background-color: var(--red) !important;
+
+    /* Makes the navbar stick while scrolling */
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+
+/* Navbar Brand - MENU on Mobile */
+.navbar .navbar-brand {
+    color: white !important;
+    font-weight: 600;
+}
+
+
+/* Navbar Navigation Links */
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 20px 0;
+    color: white !important;
+    font-weight: 500;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+
+/* Hover and Active */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--gold) !important;
+}
+
+
+/* =========================================================
+   DROPDOWN ARROW
+========================================================= */
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+    color: white;
+}
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.navbar .nav-item .dropdown-menu {
+    background-color: var(--red);
+    border: none;
+}
+
+/* Dropdown Links */
+.navbar .dropdown-menu .dropdown-item {
+    color: white;
+    background-color: var(--red);
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+/* Dropdown Hover */
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: var(--dark);
+    background-color: var(--gold);
+}
+
+/* =========================================================
+   STICKY NAVBAR
+========================================================= */
+
+.navbar.sticky-top {
+    top: -100px;
+    transition: 0.5s;
+}
+
+/* =========================================================
+   DESKTOP DROPDOWN ANIMATION
+========================================================= */
+
+@media (min-width: 992px) {
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: 0.5s;
+        opacity: 1;
+    }
+}
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    /* Navbar links */
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 8px 0;
+        color: white !important;
+    }
+
+    /* Navigation border */
+    .navbar .navbar-nav {
+        margin-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Dropdown */
+    .navbar .dropdown-menu {
+        background-color: var(--red);
+    }
+
+    .navbar .dropdown-menu .dropdown-item {
+        color: white;
+        background-color: var(--red);
+    }
+
+    .navbar .dropdown-menu .dropdown-item:hover {
+        color: var(--dark);
+        background-color: white;
+    }
+
+    /* Mobile menu button */
+    .navbar .navbar-toggler {
+        border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    /* Hamburger icon */
+    .navbar .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+    }
+}
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: left;
+}
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero-title {
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -1px;
+}
+
+/* =========================================================
+   HERO SUBTITLE
+========================================================= */
+
+.hero-subtitle {
+    margin: 0 0 30px 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   ENROLL BUTTON
+========================================================= */
+
+.hero-button {
+    text-align: left;
+}
+
+.enroll-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f7d774
+    );
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border: 2px solid #f7d774;
+    border-radius: 50px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+/* Button Icon */
+
+.enroll-btn i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Button Hover */
+
+.enroll-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #f7d774,
+        #d4af37
+    );
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
+}
+
+/* Move arrow on hover */
+
+.enroll-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .hero-content {
+        max-width: 900px;
+        padding: 40px;
+    }
+
+    .hero-title {
+        font-size: 70px;
+    }
+
+    .hero-subtitle {
+        font-size: 22px;
+    }
+
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .hero-content {
+        max-width: 800px;
+        padding: 30px;
+    }
+
+    .hero-title {
+        font-size: 58px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero-content {
+        max-width: 700px;
+        padding: 25px;
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 1.1;
+        letter-spacing: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        margin-bottom: 25px;
+    }
+
+    .enroll-btn {
+        padding: 13px 26px;
+        font-size: 16px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 38px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 22px;
+    }
+
+    .enroll-btn {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+        line-height: 1.5;
+    }
+
+    .enroll-btn {
+        padding: 11px 22px;
+        font-size: 14px;
+        gap: 8px;
+    }
+
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero-title {
+        font-size: 27px;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+    }
+
+    .enroll-btn {
+        padding: 10px 19px;
+        font-size: 13px;
+    }
+
+}
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .navbar .navbar-brand {
+        font-size: 16px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+}
+
+
+/*** Header ***/
+#header-carousel .carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+#header-carousel .carousel-control-prev,
+#header-carousel .carousel-control-next {
+    width: 10%;
+}
+
+#header-carousel .carousel-control-prev-icon,
+#header-carousel .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 500px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#header-carousel .carousel-indicators [data-bs-target] {
+    width: 60px;
+    height: 60px;
+    text-indent: 0;
+    margin-bottom: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+#header-carousel .carousel-indicators [data-bs-target] img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/image2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--secondary);
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+}
+/* =========================================================
+   GREEN VOLUNTEER HERO
+========================================================= */
+
+/* =========================================================
+   GREEN VOLUNTEER HERO
+========================================================= */
+
+.green-volunteer-content {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    text-align: left;
+
+    /* Move entire content 30px lower */
+    transform: translateY(30px);
+}
+
+.green-volunteer-title {
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.green-volunteer-text {
+    margin-top: 55px;
+    width: 100%;
+}
+
+.green-lead {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+    font-weight: 600;
+}
+
+.green-description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(255, 9, 9);
+    max-width: 850px;
+}
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .green-volunteer-content {
+        max-width: 950px;
+        padding: 40px;
+    }
+
+    .green-volunteer-title {
+        font-size: 50px;
+    }
+
+    .green-volunteer-text {
+        margin-top: 55px;
+    }
+
+    .green-lead {
+        font-size: 19px;
+    }
+
+    .green-description {
+        font-size: 18px;
+    }
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .green-volunteer-content {
+        max-width: 850px;
+        padding: 30px;
+    }
+
+    .green-volunteer-title {
+        font-size: 45px;
+    }
+
+    .green-volunteer-text {
+        margin-top: 40px;
+    }
+
+    .green-lead {
+        font-size: 18px;
+    }
+
+    .green-description {
+        font-size: 17px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .green-volunteer-content {
+        width: 100%;
+        max-width: 750px;
+        padding: 25px;
+        text-align: left;
+    }
+
+    .green-volunteer-title {
+        font-size: 40px;
+    }
+
+    .green-volunteer-text {
+        margin-top: 35px;
+    }
+
+    .green-lead {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .green-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .green-volunteer-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .green-volunteer-title {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .green-volunteer-text {
+        margin-top: 30px;
+    }
+
+    .green-lead {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .green-description {
+        font-size: 15px;
+        line-height: 1.6;
+        padding-bottom: 12px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .green-volunteer-content {
+        padding: 15px;
+    }
+
+    .green-volunteer-title {
+        font-size: 29px;
+    }
+
+    .green-volunteer-text {
+        margin-top: 28px;
+    }
+
+    .green-lead {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .green-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .green-volunteer-title {
+        font-size: 26px;
+    }
+
+    .green-volunteer-text {
+        margin-top: 25px;
+    }
+
+    .green-lead {
+        font-size: 14px;
+    }
+
+    .green-description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 4px;
+    left: -60px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+
+
+/*** Img Border ***/
+.img-border {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+
+.img-border::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 3rem;
+    bottom: 3rem;
+    border: 5px solid var(--primary);
+    border-radius: 6px;
+}
+
+.img-border img {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    object-fit: cover;
+    border-radius: 6px;
+}
+.img-border.about-logo-frame {
+    height: auto;
+    min-height: 0;
+    padding: 24px;
+    border: 4px solid var(--primary);
+    border-radius: 8px;
+}
+
+.img-border.about-logo-frame::before {
+    display: none;
+}
+
+.img-border.about-logo-frame img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/*** Facts ***/
+.fact-item {
+    transition: .5s;
+}
+
+.fact-item:hover {
+    margin-top: -10px;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+
+/*** Service ***/
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    box-shadow: none;
+    border: 1px solid #DEE2E6;
+}
+
+
+/*** Feature ***/
+.progress {
+    height: 5px;
+}
+
+.progress .progress-bar {
+    width: 0px;
+    transition: 3s;
+}
+
+
+/*** Project ***/
+.project-item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project-item:hover a {
+    opacity: 1;
+}
+
+.project-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-carousel .owl-dot {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DEE2E6;
+    border-radius: 35px;
+    transition: .5s;
+}
+
+.project-carousel .owl-dot:hover,
+.project-carousel .owl-dot.active {
+    color: #FFFFFF;
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+
+/*** Team ***/
+.team-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.team-item .team-text {
+    position: relative;
+    height: 65px;
+    overflow: hidden;
+}
+
+.team-item .team-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team-item:hover .team-title {
+    top: -65px;
+}
+
+.team-item .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 65px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    transition: .5s;
+}
+
+.team-item .team-social .btn {
+    margin: 0 3px;
+}
+
+.team-item:hover .team-social {
+    top: 0;
+}
+
+
+/*** Testimonial ***/
+
+.testimonial-carousel .owl-item .testimonial-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DEE2E6;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #FFFFFF;
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+
+/*** Footer ***/
+.footer .btn.btn-link {
+    display: block;
+
+    padding: 0;
+    text-align: left;
+    color: var(--secondary);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--secondary);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .copyright a:hover {
+    color: var(--primary);
+}
+/* =========================================================
+   FINAL MOBILE RESPONSIVE / HORIZONTAL OVERFLOW FIX
+   Added at the end so these rules override earlier CSS.
+========================================================= */
+
+/* Global box sizing */
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    /* Prevent Bootstrap containers/rows from becoming wider than the viewport */
+    .container,
+    .container-fluid,
+    .row,
+    section,
+    main,
+    header,
+    nav {
+        max-width: 100% !important;
+    }
+
+    .container,
+    .container-fluid {
+        width: 100% !important;
+    }
+
+    .row {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    [class*="col-"] {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* ================================
+       NAVBAR
+    ================================= */
+    .navbar {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden;
+    }
+
+    .navbar .container,
+    .navbar .container-fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .navbar .navbar-brand {
+        min-width: 0;
+        max-width: calc(100% - 60px);
+        overflow-wrap: break-word;
+    }
+
+    /* ================================
+       HEADER CAROUSEL
+    ================================= */
+    #header-carousel {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    #header-carousel .carousel-inner,
+    #header-carousel .carousel-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    #header-carousel .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    /* Keep carousel caption inside the phone screen */
+    #header-carousel .carousel-caption {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        overflow: hidden;
+    }
+
+    /* ================================
+       GREEN VOLUNTEER HERO
+    ================================= */
+    .green-volunteer-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 15px !important;
+        transform: none !important;
+        overflow: hidden !important;
+    }
+
+    .green-volunteer-title,
+    .green-volunteer-text,
+    .green-lead,
+    .green-description {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+
+    .green-volunteer-title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+    }
+
+    .green-volunteer-text {
+        margin-top: 20px !important;
+    }
+
+    .green-lead {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+    .green-description {
+        font-size: 14px !important;
+        line-height: 1.55 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* ================================
+       CAROUSEL INDICATORS / THUMBNAILS
+    ================================= */
+    #header-carousel .carousel-indicators {
+        width: 100% !important;
+        max-width: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 3px !important;
+        overflow: hidden !important;
+    }
+
+    #header-carousel .carousel-indicators [data-bs-target] {
+        width: 42px !important;
+        height: 55px !important;
+        min-width: 0 !important;
+        margin: 2px !important;
+        flex: 0 1 42px !important;
+        border-radius: 42px !important;
+    }
+
+    #header-carousel .carousel-indicators [data-bs-target] img {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        object-fit: cover;
+    }
+
+    /* ================================
+       SECTION TITLE
+       Original pseudo-elements extend beyond
+       the viewport, so disable them on mobile.
+    ================================= */
+    .section-title::before,
+    .section-title::after {
+        display: none !important;
+    }
+
+    /* ================================
+       SEARCH RESULTS
+    ================================= */
+    .search-results,
+    .search-result-box,
+    .search-result-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .search-results {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* ================================
+       GENERIC RESPONSIVE MEDIA
+    ================================= */
+    table {
+        max-width: 100%;
+    }
+
+    iframe,
+    embed,
+    object {
+        max-width: 100% !important;
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 576px) {
+
+    .school-slogan {
+        max-width: calc(100% - 50px);
+        min-width: 0;
+    }
+
+    .school-slogan span {
+        max-width: 100%;
+        white-space: normal !important;
+        overflow-wrap: break-word;
+    }
+
+    .green-volunteer-content {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .green-volunteer-title {
+        font-size: 24px !important;
+    }
+
+    #header-carousel .carousel-indicators {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        gap: 1px !important;
+    }
+
+    #header-carousel .carousel-indicators [data-bs-target] {
+        width: 38px !important;
+        height: 50px !important;
+        flex-basis: 38px !important;
+        margin: 1px !important;
+    }
+}
+
+/* Extra-small phones */
+@media (max-width: 400px) {
+
+    .school-slogan span {
+        font-size: 16px !important;
+    }
+
+    .green-volunteer-content {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .green-volunteer-title {
+        font-size: 21px !important;
+    }
+
+    .green-lead {
+        font-size: 13px !important;
+    }
+
+    .green-description {
+        font-size: 12px !important;
+    }
+
+    #header-carousel .carousel-indicators [data-bs-target] {
+        width: 34px !important;
+        height: 46px !important;
+        flex-basis: 34px !important;
+    }
+}
+    .pandemic-section {
+        position: relative;
+        overflow: hidden;
+        padding: 80px 24px;
+        background: #252525;
+        color: #ffffff;
+        text-align: center;
+        isolation: isolate;
+    }
+
+    .pandemic-section .pandemic-content {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .pandemic-section h1 {
+        color: #ffffff;
+        margin-bottom: 28px;
+    }
+
+    .pandemic-section p {
+        color: #eeeeee;
+        font-size: 17px;
+        line-height: 1.9;
+        margin-bottom: 24px;
+    }
+
+    .pandemic-section .virus {
+        position: absolute;
+        width: clamp(100px, 18vw, 240px);
+        height: auto;
+        color: #d4af37;
+        opacity: 0.09;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .pandemic-section .virus-one {
+        top: -30px;
+        left: -35px;
+        transform: rotate(20deg);
+    }
+
+    .pandemic-section .virus-two {
+        top: 20%;
+        right: -45px;
+        transform: rotate(-15deg);
+    }
+
+    .pandemic-section .virus-three {
+        bottom: -60px;
+        left: 30%;
+        width: 180px;
+        color: #f11808;
+    }
+
+    @media (max-width: 575px) {
+        .pandemic-section {
+            padding: 56px 20px;
+        }
+
+        .pandemic-section p {
+            font-size: 15px;
+            line-height: 1.8;
+        }
+    }

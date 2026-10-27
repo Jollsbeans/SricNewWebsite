@@ -1,0 +1,31 @@
+.feu-page { background: #fff; color: #252525; }
+.feu-wrap { max-width: 1240px; padding: 0 28px; }
+.feu-hero { display: grid; grid-template-columns: 1fr 1.1fr; gap: 44px; align-items: center; padding: 48px 0 36px; }
+.feu-kicker { display: block; font-size: 11px; color: #a8241b; font-weight: 700; letter-spacing: .14em; line-height: 1.7; margin-bottom: 14px; }
+.feu-page h2 { font-size: clamp(28px, 3vw, 37px); line-height: 1.3; font-weight: 700; margin: 0 0 24px; }
+.feu-hero h2 { font-size: clamp(34px, 3.8vw, 48px); }
+.feu-page p { font-size: 15px; color: #62594c; line-height: 1.9; margin-bottom: 24px; }
+.feu-image { min-width: 0; margin: 0; padding: 8px; border: 1px solid #e0d2b4; border-radius: 14px; background: #faf8f3; }
+.feu-image img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: contain; border-radius: 8px; }
+.feu-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 26px; }
+.feu-button { display: inline-flex; align-items: center; padding: 13px 22px; background: #c92318; color: white; border-radius: 6px; font-size: 14px; font-weight: 700; }
+.feu-button:hover { color: white; background: #a42117; }
+.feu-actions > a:not(.feu-button) { font-size: 14px; color: #a8241b; text-decoration: underline; text-underline-offset: 4px; }
+.feu-section { border-top: 1px solid #e4dac4; padding: 44px 0; scroll-margin-top: calc(var(--site-header-height, 180px) + 24px); }
+.feu-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.feu-card { padding: 27px; border: 1px solid #e0d2b4; border-top: 3px solid #c92318; border-radius: 12px; background: #faf8f3; }
+.feu-number { display: block; font-size: 13px; color: #a8241b; font-weight: 700; margin-bottom: 22px; }
+.feu-card h3 { font-size: 20px; font-weight: 700; line-height: 1.55; margin: 0 0 20px; }
+.feu-card h4 { font-size: 13px; font-weight: 600; color: #796a51; margin: 22px 0 10px; }
+.feu-card ul { padding-left: 20px; margin-bottom: 0; }
+.feu-card li { font-size: 14px; color: #62594c; line-height: 1.9; padding: 4px 0; }
+.feu-card li::marker { color: #b1261d; }
+.feu-contact { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 22px; padding: 30px; margin-bottom: 20px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.feu-contact h2 { font-size: 25px; margin-bottom: 16px; }
+.feu-contact p { font-size: 14px; margin: 0; }
+.feu-contact i { color: #a8241b; margin-right: 8px; }
+.feu-page a:focus-visible { outline: 3px solid #d4af37; outline-offset: 4px; }
+@media (max-width: 991px) { .feu-hero { grid-template-columns: 1fr; gap: 26px; } .feu-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 575px) { .feu-wrap { padding: 0 20px; } .feu-hero, .feu-section { padding: 32px 0; } .feu-grid { grid-template-columns: 1fr; } .feu-card, .feu-contact { padding: 23px; } }
+
+.page-header { background-image: linear-gradient(#252525a6, #252525a6), url("../img/image2.jpg"); }

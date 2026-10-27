@@ -1,0 +1,26 @@
+/* News cards use the testimonial carousel's 25px gaps and 1/2/3-column breakpoints. */
+.news-track { display: flex; gap: 25px; overflow-x: auto; align-items: flex-start; scroll-snap-type: x mandatory; scrollbar-width: thin; padding: 4px 0 16px; }
+.news-card { flex: 0 0 calc((100% - 50px) / 3); min-width: 0; scroll-snap-align: start; background: var(--light, #f8f9fa); border: 1px solid #e5dccb; border-radius: 8px; overflow: hidden; }
+.news-image { display: block; width: 100%; aspect-ratio: 1; background: #fff; }
+.news-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.news-copy { padding: 24px; }
+.news-copy time { display: block; color: #9e2319; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+.news-copy h3 { font-size: 20px; line-height: 1.45; min-height: 87px; margin-bottom: 14px; }
+.news-copy p { font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.news-copy > p:not(.news-hashtags) { min-height: 126px; }
+.news-copy summary { color: #a52017; cursor: pointer; font-weight: 600; font-size: 14px; margin-bottom: 14px; }
+.news-copy details p { margin-top: 14px; }
+.news-copy .news-hashtags { color: #9d241b; font-size: 12px; margin-top: 16px; min-height: 65px; }
+.news-post-link { font-weight: 600; font-size: 14px; }
+.news-controls { display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 22px; flex-wrap: wrap; }
+.news-controls button { border: 1px solid var(--primary, #c92318); color: var(--primary, #c92318); background: #fff; border-radius: 50%; width: 44px; height: 44px; }
+.news-controls button:hover { background: var(--primary, #c92318); color: #fff; }
+.news-events :is(a,button,summary,[tabindex]):focus-visible { outline: 3px solid #d4af37; outline-offset: 3px; }
+@media (max-width: 991px) { .news-card { flex-basis: calc((100% - 25px) / 2); } }
+@media (max-width: 767px) { .news-card { flex-basis: 100%; } .news-copy h3 { min-height: 0; } }
+@media (prefers-reduced-motion: reduce) { .news-track { scroll-behavior: auto; } }
+
+/* Hide obsolete slideshow controls if an older page is cached. */
+.news-events .news-pause { display: none !important; }
+.news-track { scrollbar-width: none; }
+.news-track::-webkit-scrollbar { display: none; }

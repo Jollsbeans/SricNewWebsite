@@ -1,0 +1,59 @@
+.aru-page { background: #fff; color: #252525; }
+.aru-wrap { max-width: 1240px; padding: 0 28px; }
+.aru-hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 44px; align-items: center; padding: 48px 0 32px; }
+.aru-kicker { display: block; color: #a8241b; font-size: 11px; font-weight: 700; letter-spacing: .14em; margin-bottom: 14px; }
+.aru-page h2 { font-size: clamp(28px, 3vw, 37px); font-weight: 700; line-height: 1.3; margin-bottom: 24px; }
+.aru-hero h2 { font-size: clamp(33px, 3.7vw, 46px); }
+.aru-page h3 { font-size: 20px; font-weight: 700; line-height: 1.5; margin-bottom: 18px; }
+.aru-page p, .aru-page li { color: #62594c; font-size: 15px; line-height: 1.9; }
+.aru-page p { margin-bottom: 22px; }
+.aru-hero figure { margin: 0; padding: 8px; border: 1px solid #e0d2b4; border-radius: 14px; background: #faf8f3; }
+.aru-hero img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.aru-hero figcaption { padding: 16px 12px; font-size: 13px; color: #a8241b; }
+.aru-button { display: inline-flex; padding: 13px 22px; background: #c92318; color: white; border-radius: 6px; font-size: 14px; font-weight: 700; }
+.aru-button:hover { background: #a42117; color: white; }
+.aru-jump { display: flex; gap: 10px; flex-wrap: wrap; padding: 22px 0 28px; border-bottom: 1px solid #e4dac4; }
+.aru-jump a { padding: 9px 15px; border: 1px solid #e0d2b4; border-radius: 24px; color: #665846; font-size: 13px; }
+.aru-section { padding: 38px 0; border-bottom: 1px solid #e4dac4; scroll-margin-top: calc(var(--site-header-height, 180px) + 24px); }
+.aru-section .program, .aru-section .info-grid { background: #faf8f3; padding: 26px; border: 1px solid #e0d2b4; border-radius: 12px; margin-bottom: 20px; }
+.aru-section .program { border-left: 3px solid #c92318; }
+.aru-section .program ul { margin: 0; padding-left: 20px; }
+.aru-section .program li { padding: 5px 0; }
+.aru-section .program li::marker { color: #b1261d; }
+.aru-filters { display: grid; grid-template-columns: .8fr 1.2fr; gap: 20px; padding: 24px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.aru-filters label { font-size: 13px; font-weight: 600; }
+.aru-filters input, .aru-filters select { display: block; width: 100%; min-height: 46px; padding: 10px 12px; margin-top: 10px; background: white; border: 1px solid #d8c7a4; border-radius: 6px; font-size: 14px; }
+.aru-page #aru-results { margin: 16px 0 0; font-size: 12px; }
+.aru-timeline { padding-left: 28px; border-left: 2px solid #d8c6a0; margin: 28px 0; }
+.aru-timeline > li { padding: 24px; margin: 0 0 20px 15px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.aru-timeline > li::marker { font-weight: 700; color: #a8241b; }
+.aru-timeline p { margin: 0; font-size: 14px; }
+.aru-cta { padding: 32px; margin: 38px 0 16px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.aru-page [hidden] { display: none !important; }
+.aru-page :is(a, input, select):focus-visible { outline: 3px solid #d4af37; outline-offset: 4px; }
+@media (max-width: 991px) { .aru-hero { grid-template-columns: 1fr; gap: 26px; } }
+@media (max-width: 575px) { .aru-wrap { padding: 0 20px; } .aru-filters { grid-template-columns: 1fr; } .aru-hero, .aru-section { padding: 32px 0; } }
+
+/* Clickable university video thumbnail. */
+.aru-video > a { display: block; text-decoration: none; }
+.aru-video-preview { position: relative; display: block; overflow: hidden; border-radius: 8px; }
+.aru-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #c92117;
+    color: #fff;
+    box-shadow: 0 4px 24px #0005;
+    transition: background .2s ease;
+}
+.aru-video a:hover .aru-play,
+.aru-video a:focus-visible .aru-play { background: #9d160e; }
+.aru-play svg { margin-left: 3px; }
+@media (max-width: 575px) { .aru-play { width: 58px; height: 58px; } }

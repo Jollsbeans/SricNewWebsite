@@ -1,0 +1,51 @@
+.csi-page { background: #fff; color: #252525; }
+.csi-wrap { max-width: 1240px; padding: 0 28px; }
+.csi-hero { display: grid; grid-template-columns: 1.4fr .8fr; gap: 48px; align-items: center; padding: 48px 0 32px; }
+.csi-kicker { display: block; color: #a8241b; font-size: 11px; font-weight: 700; letter-spacing: .14em; line-height: 1.7; margin-bottom: 14px; }
+.csi-page h2 { font-size: clamp(27px, 3vw, 36px); font-weight: 700; line-height: 1.3; margin: 0 0 24px; }
+.csi-hero h2 { font-size: clamp(33px, 3.7vw, 46px); }
+.csi-page p { color: #62594c; font-size: 15px; line-height: 1.95; margin: 0 0 24px; }
+.csi-page .csi-lead { font-size: 20px; color: #3e3529; line-height: 1.7; }
+.csi-emblem { margin: 0; border: 1px solid #e0d2b4; border-radius: 16px; background: #faf8f3; padding: 24px; text-align: center; }
+.csi-emblem img { display: block; width: 100%; height: auto; max-height: 330px; object-fit: contain; margin: 0 auto 18px; }
+.csi-emblem figcaption { color: #7a6641; font-size: 12px; letter-spacing: .08em; }
+.csi-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 26px; }
+.csi-button { display: inline-flex; align-items: center; gap: 22px; padding: 13px 22px; border-radius: 6px; background: #c92318; color: white; font-size: 14px; font-weight: 700; }
+.csi-button:hover { background: #a42117; color: white; }
+.csi-actions > a:not(.csi-button) { color: #a8241b; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
+.csi-jump { display: flex; gap: 10px; flex-wrap: wrap; padding: 22px 0 28px; border-bottom: 1px solid #e4dac4; }
+.csi-jump a { padding: 9px 15px; border: 1px solid #e0d2b4; border-radius: 24px; color: #665846; font-size: 13px; }
+.csi-jump a:hover { background: #c92318; color: white; border-color: #c92318; }
+.csi-section { padding: 46px 0; border-bottom: 1px solid #e4dac4; scroll-margin-top: calc(var(--site-header-height, 180px) + 24px); }
+.csi-section > p { max-width: 1080px; }
+.csi-section > p:last-child { margin-bottom: 0; }
+.csi-pathway { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+.csi-pathway > div { padding: 26px; border: 1px solid #e0d2b4; border-top: 3px solid #c92318; border-radius: 12px; background: #faf8f3; }
+.csi-pathway span { display: block; color: #a8241b; font-size: 13px; margin-bottom: 20px; }
+.csi-pathway strong { display: block; font-size: 18px; line-height: 1.6; margin-bottom: 12px; }
+.csi-pathway p { font-size: 14px; margin-bottom: 0; }
+.csi-highlight { display: flex; gap: 24px; padding: 28px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.csi-highlight i { color: #b1261d; font-size: 28px; margin-top: 4px; }
+.csi-highlight h3 { font-size: 19px; font-weight: 700; line-height: 1.6; }
+.csi-highlight p { margin-bottom: 0; font-size: 14px; }
+.csi-cta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 32px; margin: 40px 0 10px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.csi-cta h2 { font-size: 25px; margin: 0; }
+.csi-cta .csi-actions { margin: 0; }
+.csi-page a:focus-visible { outline: 3px solid #d4af37; outline-offset: 4px; }
+@media (max-width: 991px) { .csi-hero { grid-template-columns: 1fr; gap: 28px; } .csi-emblem { max-width: 480px; width: 100%; margin: auto; } .csi-pathway { grid-template-columns: 1fr; } }
+@media (max-width: 575px) { .csi-wrap { padding: 0 20px; } .csi-hero, .csi-section { padding: 32px 0; } .csi-hero h2 { font-size: 33px; } .csi-highlight, .csi-cta { padding: 23px; } }
+
+
+/* Certification directory and supplied global-impact statements. */
+.csi-standard-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.csi-standard { padding: 26px; background: #faf8f3; border: 1px solid #e0d2b4; border-top: 3px solid #c92318; border-radius: 12px; }
+.csi-standard h3 { font-size: 23px; color: #a8241b; font-weight: 700; margin-bottom: 15px; }
+.csi-standard p { font-size: 14px; margin: 0; }
+.csi-impact { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; list-style: none; padding: 0; margin: 0; }
+.csi-impact li { padding: 25px; border: 1px solid #e0d2b4; border-radius: 12px; font-size: 15px; line-height: 1.9; color: #62594c; background: #faf8f3; }
+.csi-accreditation { display: flex; align-items: start; gap: 24px; padding: 28px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.csi-accreditation i { font-size: 30px; color: #b1261d; margin-top: 4px; }
+.csi-accreditation p { margin: 0; }
+@media (max-width: 767px) { .csi-standard-grid, .csi-impact { grid-template-columns: 1fr; } .csi-accreditation { padding: 23px; } }
+
+.page-header { background-image: linear-gradient(#252525a6, #252525a6), url("../img/csi.jpg"); }

@@ -1,0 +1,18 @@
+/* About: left introductory links plus Permit; right existing school links. */
+@media (min-width: 992px) {
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position] {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    border-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="1"] { grid-column: 1 !important; grid-row: 1 !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="2"] { grid-column: 1 !important; grid-row: 2 !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="3"] { grid-column: 1 !important; grid-row: 3 !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="4"] { grid-column: 1 !important; grid-row: 4 !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="5"] { grid-column: 2 !important; grid-row: 1 !important; border-left: 1px solid #e5e0d6 !important; padding-left: 24px !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="6"] { grid-column: 2 !important; grid-row: 2 !important; border-left: 1px solid #e5e0d6 !important; padding-left: 24px !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="7"] { grid-column: 2 !important; grid-row: 3 !important; border-left: 1px solid #e5e0d6 !important; padding-left: 24px !important; }
+  #school-links > .school-dropdown > ul.about-menu-columns > li[data-about-position="8"] { grid-column: 2 !important; grid-row: 4 !important; border-left: 1px solid #e5e0d6 !important; padding-left: 24px !important; }
+}
+@media (max-width: 991px) { #school-links > .school-dropdown > ul.about-menu-columns { display: block; } }

@@ -1,0 +1,865 @@
+/* cyber-security page styles. Shared site styles load before this file. */
+
+/* Style block 1: kept in original cascade order. */
+.summit-page {
+  background:#fff
+}
+
+.summit-intro {
+  background:#faf8f3;
+  border-bottom:1px solid #e9dfc7;
+  text-align:center;
+  padding:60px 20px 48px
+}
+
+.summit-eyebrow {
+  display:block;
+  color:#a8241b;
+  letter-spacing:.16em;
+  font-size:11px;
+  font-weight:700;
+  margin-bottom:18px
+}
+
+.summit-intro h1 {
+  font-size:clamp(34px,4.5vw,56px);
+  line-height:1.15;
+  letter-spacing:-.035em;
+  font-weight:700;
+  color:#252525;
+  margin:0
+}
+
+.summit-divider {
+  width:48px;
+  height:3px;
+  background:#c92318;
+  margin:24px auto
+}
+
+.summit-award {
+  font-size:clamp(20px,2.5vw,28px);
+  font-weight:600;
+  color:#8e241a;
+  margin:0 0 14px
+}
+
+.summit-meta {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  color:#6d6455;
+  font-size:14px
+}
+
+.summit-content {
+  max-width:1160px;
+  padding-top:48px;
+  padding-bottom:32px
+}
+
+.summit-carousel {
+  overflow:hidden;
+  border:1px solid #ddcfad;
+  border-radius:14px;
+  box-shadow:0 8px 26px #2525250a;
+  background:#f6f3eb
+}
+
+.summit-carousel .carousel-item {
+  padding:24px 64px
+}
+
+.summit-carousel .carousel-item img {
+  display:block;
+  width:100%;
+  height:560px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:6px
+}
+
+.summit-carousel .carousel-control-prev,.summit-carousel .carousel-control-next {
+  width:56px;
+  opacity:1;
+  background:none;
+  border:0;
+  color:#a8241b;
+  font-size:36px
+}
+
+.summit-carousel .carousel-control-prev:hover,.summit-carousel .carousel-control-next:hover {
+  color:#d4af37
+}
+
+.summit-carousel button:focus-visible {
+  outline:3px solid #d4af37;
+  outline-offset:-6px
+}
+
+.summit-story {
+  max-width:880px;
+  margin:48px auto 0
+}
+
+.summit-story p {
+  text-align:left;
+  line-height:1.9;
+  font-size:17px;
+  color:#55534e;
+  margin:0 0 26px
+}
+
+.summit-story .summit-lead {
+  font-size:20px;
+  color:#252525;
+  line-height:1.85
+}
+
+.summit-story p:last-child {
+  padding:24px 28px;
+  background:#faf8f3;
+  border-left:3px solid #d4af37;
+  border-radius:0 6px 6px 0;
+  margin-top:32px
+}
+
+@media(max-width:767px) {
+  .summit-intro {
+    padding:44px 20px 36px
+  }
+
+  .summit-content {
+    padding:32px 20px 24px
+  }
+
+  .summit-carousel .carousel-item {
+    padding:16px 42px
+  }
+
+  .summit-carousel .carousel-item img {
+    height:380px
+  }
+
+  .summit-carousel .carousel-control-prev,.summit-carousel .carousel-control-next {
+    width:38px;
+    font-size:28px
+  }
+
+  .summit-story {
+    margin-top:32px
+  }
+
+  .summit-story p {
+    font-size:16px
+  }
+
+  .summit-story .summit-lead {
+    font-size:18px
+  }
+
+  .summit-story p:last-child {
+    padding:20px
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .summit-carousel .carousel-item {
+    transition:none!important
+  }
+
+}
+
+/* Style block 2: kept in original cascade order. */
+.cyber-page {
+  background:white;
+  color:#252525
+}
+
+.cyber-wrap {
+  max-width:1240px;
+  padding:0 28px
+}
+
+.cyber-hero,.cyber-split {
+  display:grid;
+  grid-template-columns:1.05fr 1fr;
+  gap:48px;
+  align-items:center
+}
+
+.cyber-hero {
+  padding:52px 0 36px
+}
+
+.cyber-kicker {
+  display:block;
+  color:#ab241a;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.14em;
+  line-height:1.7;
+  margin-bottom:16px
+}
+
+.cyber-page h2 {
+  font-size:clamp(27px,3vw,36px);
+  line-height:1.3;
+  margin:0 0 22px;
+  font-weight:700
+}
+
+.cyber-hero h2 {
+  font-size:clamp(32px,3.6vw,46px)
+}
+
+.cyber-page h3 {
+  font-size:21px;
+  font-weight:700;
+  line-height:1.4;
+  margin:0 0 18px
+}
+
+.cyber-page p,.cyber-page li {
+  color:#58554f;
+  font-size:15px;
+  line-height:1.85
+}
+
+.cyber-page p {
+  margin:0 0 22px
+}
+
+.cyber-page .cyber-tagline {
+  font-size:19px;
+  color:#312c25;
+  line-height:1.6
+}
+
+.cyber-image {
+  background:#faf8f4;
+  border:1px solid #e3d7bb;
+  border-radius:14px;
+  padding:8px;
+  margin:0;
+  min-width:0
+}
+
+.cyber-image img {
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:500px;
+  object-fit:contain;
+  border-radius:8px
+}
+
+.cyber-actions {
+  display:flex;
+  align-items:center;
+  gap:22px;
+  flex-wrap:wrap;
+  margin-top:26px
+}
+
+.cyber-actions>a:not(.cyber-button) {
+  font-size:14px;
+  color:#a7241b;
+  text-decoration:underline;
+  text-underline-offset:4px
+}
+
+.cyber-button {
+  display:inline-flex;
+  gap:24px;
+  align-items:center;
+  padding:13px 24px;
+  border-radius:6px;
+  background:#c92318;
+  color:white;
+  font-weight:700;
+  font-size:14px
+}
+
+.cyber-button:hover {
+  background:#a52118;
+  color:white
+}
+
+.cyber-stats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border:1px solid #e3d7bb;
+  border-radius:12px;
+  background:#faf8f4
+}
+
+.cyber-stats>div {
+  padding:23px;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  column-gap:15px;
+  align-items:center
+}
+
+.cyber-stats>div+div {
+  border-left:1px solid #e3d7bb
+}
+
+.cyber-stats i {
+  color:#b1261d;
+  font-size:25px;
+  grid-row:span 2
+}
+
+.cyber-stats strong {
+  font-size:20px;
+  color:#252525
+}
+
+.cyber-stats span {
+  font-size:12px;
+  color:#6a6256
+}
+
+.cyber-jump {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:26px 0;
+  border-bottom:1px solid #e7deca
+}
+
+.cyber-jump a {
+  padding:8px 16px;
+  border:1px solid #e3d7bb;
+  border-radius:24px;
+  font-size:13px;
+  color:#605747
+}
+
+.cyber-jump a:hover {
+  background:#c92318;
+  border-color:#c92318;
+  color:#fff
+}
+
+.cyber-section {
+  padding:52px 0;
+  border-bottom:1px solid #e7deca;
+  scroll-margin-top:calc(var(--site-header-height,180px) + 24px)
+}
+
+.cyber-curriculum {
+  display:grid;
+  grid-template-columns:1.45fr 1fr;
+  gap:28px;
+  align-items:start
+}
+
+.cyber-competency {
+  border:1px solid #e3d7bb;
+  border-radius:9px;
+  margin-bottom:12px;
+  overflow:hidden
+}
+
+.cyber-competency summary {
+  padding:19px 22px;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+  background:#faf8f4;
+  color:#332f28
+}
+
+.cyber-competency[open] summary {
+  border-bottom:1px solid #e3d7bb;
+  color:#ab241a
+}
+
+.cyber-competency ul {
+  padding:18px 24px 18px 40px;
+  margin:0;
+  list-style:none
+}
+
+.cyber-competency li+li {
+  margin-top:8px
+}
+
+.cyber-card {
+  background:#faf8f4;
+  border:1px solid #e3d7bb;
+  border-radius:12px;
+  padding:28px
+}
+
+.cyber-card ul,.cyber-split ul {
+  padding-left:20px;
+  margin-bottom:0
+}
+
+.cyber-card li+li,.cyber-split li+li {
+  margin-top:12px
+}
+
+.cyber-page li::marker {
+  color:#b1261d
+}
+
+.cyber-icon {
+  font-size:30px;
+  color:#b1261d;
+  margin-bottom:22px
+}
+
+.cyber-careers .cyber-note {
+  padding-top:20px;
+  margin:22px 0 0;
+  border-top:1px solid #ded2b8;
+  font-size:14px
+}
+
+.cyber-gallery {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+  margin-top:28px
+}
+
+.cyber-gallery-item {
+  margin:0;
+  border:1px solid #e3d7bb;
+  border-radius:10px;
+  overflow:hidden;
+  background:#faf8f4;
+  min-width:0
+}
+
+.cyber-gallery-item a {
+  display:block;
+  background:#fff
+}
+
+.cyber-gallery-item img {
+  width:100%;
+  height:220px;
+  display:block;
+  object-fit:contain;
+  padding:8px
+}
+
+.cyber-gallery-item figcaption {
+  padding:17px 18px;
+  font-size:14px;
+  font-weight:600;
+  line-height:1.7;
+  border-top:1px solid #e3d7bb
+}
+
+.cyber-opportunities {
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:24px
+}
+
+.cyber-enrollment {
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:48px;
+  align-items:start;
+  border-bottom:0
+}
+
+.cyber-steps {
+  counter-reset:enroll;
+  list-style:none;
+  padding:0;
+  margin:26px 0
+}
+
+.cyber-steps li {
+  counter-increment:enroll;
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:14px
+}
+
+.cyber-steps li:before {
+  content:counter(enroll);
+  display:grid;
+  place-items:center;
+  flex:0 0 32px;
+  height:32px;
+  border:1px solid #e3d7bb;
+  border-radius:50%;
+  color:#ab241a;
+  font-size:13px;
+  font-weight:700;
+  background:#faf8f4
+}
+
+.cyber-enrollment aside ul {
+  list-style:none;
+  padding:0;
+  overflow-wrap:anywhere
+}
+
+.cyber-page a:focus-visible,.cyber-page summary:focus-visible {
+  outline:3px solid #d4af37;
+  outline-offset:4px
+}
+
+@media(max-width:991px) {
+  .cyber-hero,.cyber-split,.cyber-curriculum {
+    grid-template-columns:1fr;
+    gap:28px
+  }
+
+  .cyber-gallery {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+
+  .cyber-stats>div {
+    padding:18px 14px
+  }
+
+  .cyber-stats strong {
+    font-size:17px
+  }
+
+  .cyber-enrollment {
+    gap:24px
+  }
+
+}
+
+@media(max-width:575px) {
+  .cyber-wrap {
+    padding:0 20px
+  }
+
+  .cyber-hero,.cyber-section {
+    padding:36px 0
+  }
+
+  .cyber-stats,.cyber-opportunities,.cyber-enrollment,.cyber-gallery {
+    grid-template-columns:1fr
+  }
+
+  .cyber-stats>div+div {
+    border-left:0;
+    border-top:1px solid #e3d7bb
+  }
+
+  .cyber-stats>div {
+    padding:18px 24px
+  }
+
+  .cyber-gallery-item img {
+    height:250px
+  }
+
+  .cyber-card {
+    padding:23px
+  }
+
+  .cyber-competency summary {
+    padding:17px
+  }
+
+  .cyber-hero h2 {
+    font-size:34px
+  }
+
+}
+
+/* Style block 3: kept in original cascade order. */
+.cyber-timeline {
+  position:relative;
+  list-style:none;
+  padding:10px 0;
+  margin:36px 0 0
+}
+
+.cyber-timeline:before {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:20px;
+  bottom:30px;
+  width:2px;
+  background:#dfd1ae;
+  transform:translateX(-50%)
+}
+
+.cyber-timeline .cyber-milestone {
+  position:relative;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:64px;
+  margin:0 0 32px;
+  align-items:start
+}
+
+.cyber-milestone:before {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:21px;
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#c92318;
+  border:3px solid white;
+  box-shadow:0 0 0 2px #d4af37;
+  transform:translateX(-50%)
+}
+
+.cyber-milestone-date {
+  grid-column:1;
+  text-align:right;
+  padding-top:13px;
+  font-size:15px;
+  font-weight:700;
+  color:#ab241a
+}
+
+.cyber-milestone article {
+  grid-column:2;
+  grid-row:1;
+  background:#faf8f4;
+  border:1px solid #e3d7bb;
+  border-radius:12px;
+  overflow:hidden;
+  padding:20px
+}
+
+.cyber-milestone:nth-child(even) .cyber-milestone-date {
+  grid-column:2;
+  text-align:left
+}
+
+.cyber-milestone:nth-child(even) article {
+  grid-column:1
+}
+
+.cyber-page .cyber-milestone h3 {
+  font-size:19px;
+  margin:0 0 16px
+}
+
+.cyber-milestone a {
+  display:block;
+  border-radius:6px;
+  background:white;
+  overflow:hidden
+}
+
+.cyber-milestone img {
+  display:block;
+  width:100%;
+  height:250px;
+  object-fit:contain
+}
+
+.cyber-timeline .cyber-milestone:last-child {
+  margin-bottom:0
+}
+
+@media(max-width:767px) {
+  .cyber-timeline:before {
+    left:8px
+  }
+
+  .cyber-timeline .cyber-milestone {
+    display:block;
+    padding-left:38px;
+    margin-bottom:28px
+  }
+
+  .cyber-milestone:before {
+    left:8px;
+    top:13px
+  }
+
+  .cyber-milestone-date,.cyber-milestone:nth-child(even) .cyber-milestone-date {
+    text-align:left;
+    padding:3px 0 12px
+  }
+
+  .cyber-milestone article {
+    padding:17px
+  }
+
+  .cyber-milestone img {
+    height:auto;
+    max-height:340px
+  }
+
+}
+
+/* Style block 4: kept in original cascade order. */
+.cyber-enrollment {
+  grid-template-columns:1fr
+}
+
+.cyber-enrollment>div {
+  max-width:820px;
+  width:100%
+}
+
+/* Style block 5: kept in original cascade order. */
+.cyber-enrollment {
+  grid-template-columns:1.1fr 1fr;
+  align-items:center;
+  gap:48px
+}
+
+.enroll-step-slider {
+  width:100%;
+  min-width:0;
+  border:1px solid #e3d7bb;
+  border-radius:16px;
+  background:#faf8f4;
+  overflow:hidden
+}
+
+.enroll-visual {
+  text-align:center;
+  min-height:425px;
+  padding:28px 45px 36px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center
+}
+
+.enroll-visual svg {
+  width:100%;
+  max-width:280px;
+  height:260px;
+  margin:0 0 16px
+}
+
+.cyber-page .enroll-visual h3 {
+  font-size:21px;
+  max-width:290px;
+  margin:0;
+  min-height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.enroll-visual .cyber-kicker {
+  margin-bottom:4px
+}
+
+.enroll-step-slider .carousel-control-prev,.enroll-step-slider .carousel-control-next {
+  width:10%;
+  background:transparent;
+  border:0;
+  color:#b5261b;
+  opacity:1;
+  font-size:30px
+}
+
+.enroll-step-slider button:focus-visible {
+  outline:3px solid #d4af37;
+  outline-offset:-4px
+}
+
+@media(max-width:767px) {
+  .cyber-enrollment {
+    grid-template-columns:1fr;
+    gap:28px
+  }
+
+  .enroll-visual {
+    min-height:365px;
+    padding:24px 38px
+  }
+
+  .enroll-visual svg {
+    height:220px
+  }
+
+  .cyber-page .enroll-visual h3 {
+    font-size:19px
+  }
+
+}
+
+/* Style block 6: kept in original cascade order. */
+.cyber-program-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  margin-top:26px
+}
+
+.cyber-program-card {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  background:#faf8f4;
+  border:1px solid #e3d7bb;
+  border-radius:12px;
+  padding:24px
+}
+
+.cyber-program-card img {
+  display:block;
+  width:100%;
+  height:190px;
+  object-fit:contain;
+  border-radius:6px;
+  margin:0 0 20px
+}
+
+.cyber-page .cyber-program-card h3 {
+  font-size:20px;
+  margin:0 0 20px
+}
+
+.cyber-page .cyber-program-card p {
+  font-size:14px;
+  line-height:1.85;
+  margin-bottom:22px
+}
+
+.cyber-program-card>a {
+  margin-top:auto;
+  font-size:14px;
+  font-weight:600;
+  color:#ad241a;
+  text-underline-offset:4px
+}
+
+.cyber-program-card>a:hover {
+  text-decoration:underline
+}
+
+@media(max-width:991px) {
+  .cyber-program-grid {
+    grid-template-columns:1fr 1fr
+  }
+
+}
+
+@media(max-width:575px) {
+  .cyber-program-grid {
+    grid-template-columns:1fr
+  }
+
+  .cyber-program-card {
+    padding:22px
+  }
+
+}

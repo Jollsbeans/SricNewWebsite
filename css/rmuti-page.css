@@ -1,0 +1,39 @@
+.rmutp-page { background: #fff; color: #252525; }
+.rmutp-wrap { max-width: 1240px; padding: 0 28px; }
+.rmutp-hero { display: grid; grid-template-columns: 1.4fr .8fr; gap: 48px; align-items: center; padding: 48px 0 32px; }
+.rmutp-kicker { display: block; color: #a8241b; font-size: 11px; font-weight: 700; letter-spacing: .14em; line-height: 1.7; margin-bottom: 14px; }
+.rmutp-page h2 { font-size: clamp(27px, 3vw, 36px); font-weight: 700; line-height: 1.3; margin: 0 0 24px; }
+.rmutp-hero h2 { font-size: clamp(33px, 3.7vw, 46px); }
+.rmutp-page p { color: #62594c; font-size: 15px; line-height: 1.95; margin: 0 0 24px; }
+.rmutp-page .rmutp-lead { font-size: 20px; color: #3e3529; line-height: 1.7; }
+.rmutp-emblem { margin: 0; border: 1px solid #e0d2b4; border-radius: 16px; background: #faf8f3; padding: 24px; text-align: center; }
+.rmutp-emblem img { display: block; width: 100%; height: auto; max-height: 330px; object-fit: contain; margin: 0 auto 18px; }
+.rmutp-emblem figcaption { color: #7a6641; font-size: 12px; letter-spacing: .08em; }
+.rmutp-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 26px; }
+.rmutp-button { display: inline-flex; align-items: center; gap: 22px; padding: 13px 22px; border-radius: 6px; background: #c92318; color: white; font-size: 14px; font-weight: 700; }
+.rmutp-button:hover { background: #a42117; color: white; }
+.rmutp-actions > a:not(.rmutp-button) { color: #a8241b; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
+.rmutp-jump { display: flex; gap: 10px; flex-wrap: wrap; padding: 22px 0 28px; border-bottom: 1px solid #e4dac4; }
+.rmutp-jump a { padding: 9px 15px; border: 1px solid #e0d2b4; border-radius: 24px; color: #665846; font-size: 13px; }
+.rmutp-jump a:hover { background: #c92318; color: white; border-color: #c92318; }
+.rmutp-section { padding: 46px 0; border-bottom: 1px solid #e4dac4; scroll-margin-top: calc(var(--site-header-height, 180px) + 24px); }
+.rmutp-section > p { max-width: 1080px; }
+.rmutp-section > p:last-child { margin-bottom: 0; }
+.rmutp-pathway { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+.rmutp-pathway > div { padding: 26px; border: 1px solid #e0d2b4; border-top: 3px solid #c92318; border-radius: 12px; background: #faf8f3; }
+.rmutp-pathway span { display: block; color: #a8241b; font-size: 13px; margin-bottom: 20px; }
+.rmutp-pathway strong { display: block; font-size: 18px; line-height: 1.6; margin-bottom: 12px; }
+.rmutp-pathway p { font-size: 14px; margin-bottom: 0; }
+.rmutp-highlight { display: flex; gap: 24px; padding: 28px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.rmutp-highlight i { color: #b1261d; font-size: 28px; margin-top: 4px; }
+.rmutp-highlight h3 { font-size: 19px; font-weight: 700; line-height: 1.6; }
+.rmutp-highlight p { margin-bottom: 0; font-size: 14px; }
+.rmutp-cta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 32px; margin: 40px 0 10px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.rmutp-cta h2 { font-size: 25px; margin: 0; }
+.rmutp-cta .rmutp-actions { margin: 0; }
+.rmutp-page a:focus-visible { outline: 3px solid #d4af37; outline-offset: 4px; }
+@media (max-width: 991px) { .rmutp-hero { grid-template-columns: 1fr; gap: 28px; } .rmutp-emblem { max-width: 480px; width: 100%; margin: auto; } .rmutp-pathway { grid-template-columns: 1fr; } }
+@media (max-width: 575px) { .rmutp-wrap { padding: 0 20px; } .rmutp-hero, .rmutp-section { padding: 32px 0; } .rmutp-hero h2 { font-size: 33px; } .rmutp-highlight, .rmutp-cta { padding: 23px; } }
+
+/* Banner image retained from the supplied partner page. */
+.page-header { background-image: linear-gradient(#252525a6, #252525a6), url("../img/coe%202.png"); }

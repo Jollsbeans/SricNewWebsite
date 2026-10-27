@@ -1,0 +1,21 @@
+.permits-page { background: white; color: #252525; }
+.permits-wrap { max-width: 1320px; padding: 48px 28px; }
+.permits-kicker { display: block; color: #a8241b; font-size: 11px; font-weight: 700; letter-spacing: .14em; margin-bottom: 14px; }
+.permits-page h2 { font-size: clamp(32px, 4vw, 44px); font-weight: 700; line-height: 1.3; margin-bottom: 20px; }
+.permits-page p { font-size: 14px; line-height: 1.8; color: #665c4c; }
+.permits-filter { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin: 28px 0; padding: 20px; border: 1px solid #dfd1b2; border-radius: 10px; background: #faf8f3; }
+.permits-filter label { font-size: 13px; font-weight: 600; }
+.permits-filter select { padding: 10px 14px; max-width: 100%; min-height: 44px; border: 1px solid #d7c7a5; background: white; border-radius: 6px; font-size: 14px; }
+.permits-filter p { margin: 0 0 0 auto; font-size: 12px; }
+.permits-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.permit-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid #dfd1b2; border-radius: 12px; background: white; overflow: hidden; }
+.permit-card:hover { border-color: #c92318; box-shadow: 0 6px 24px #2525250b; }
+.permit-card img { width: 100%; height: 280px; object-fit: contain; display: block; padding: 15px; }
+.permit-card > div { border-top: 1px solid #e6ddca; padding: 20px; background: #faf8f3; margin-top: auto; }
+.permit-card > div > span { color: #9b3023; font-size: 11px; }
+.permit-card h3 { font-size: 16px; line-height: 1.6; margin: 10px 0; font-weight: 700; color: #332d24; }
+.permit-card p { margin: 0; font-size: 12px; display: flex; justify-content: space-between; }
+.permits-page [hidden] { display: none !important; }
+.permits-page :is(a, select):focus-visible { outline: 3px solid #d4af37; outline-offset: 3px; }
+@media (max-width: 991px) { .permits-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 575px) { .permits-wrap { padding: 32px 20px; } .permits-grid { grid-template-columns: 1fr; } .permits-filter { align-items: stretch; flex-direction: column; } .permits-filter p { margin: 0; } }

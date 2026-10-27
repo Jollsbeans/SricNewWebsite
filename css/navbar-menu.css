@@ -1,0 +1,26 @@
+/* Existing red, gold and white navbar with the supplied menu hierarchy. */
+.school-utility{display:flex;justify-content:flex-end;gap:22px;padding:0 32px 10px;max-width:1380px;margin:auto;font-size:12px;font-weight:600}.school-utility a{color:#a92118}
+#school-links.school-menu-list{align-items:stretch;gap:0;flex-wrap:wrap}
+#school-links.school-menu-list>a,#school-links.school-menu-list>.school-dropdown>summary{padding:14px 12px;font-size:13px;font-weight:600;color:white}
+.school-dropdown{position:relative;min-width:0}
+.school-dropdown>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;list-style:none;border-bottom:3px solid transparent}
+.school-dropdown>summary::-webkit-details-marker{display:none}
+.school-dropdown[open]>summary,.school-dropdown>summary:hover{background:#ffffff15;border-bottom-color:#f7d774}
+.school-dropdown-list{position:absolute;top:100%;left:0;z-index:20;list-style:none;margin:0;padding:8px;width:330px;max-width:calc(100vw - 32px);max-height:60vh;overflow:auto;background:white;border:1px solid #e8dfcb;border-top:3px solid #d4af37;border-radius:0 0 8px 8px;box-shadow:0 12px 28px #25252525}
+#school-links .school-dropdown-list a{display:block;color:#333;padding:10px 12px;font-size:13px;line-height:1.6;white-space:normal;border:0;border-radius:4px;overflow-wrap:break-word}
+#school-links .school-dropdown-list a:hover,#school-links .school-dropdown-list a[aria-current]{background:#faf3e8;color:#b52317}
+.school-dropdown-list li{margin:0;padding:0;list-style:none}
+.school-submenu>summary{color:#333;padding:10px 12px;font-size:13px;line-height:1.6}
+.school-submenu[open]>summary{background:#faf3e8;color:#b52317}
+.school-submenu>.school-dropdown-list{position:static;width:100%;max-height:none;max-width:none;box-shadow:none;border:0;border-left:2px solid #d4af37;border-radius:0;padding:0 0 0 8px;background:#fffcf7}
+.school-menu-list>.school-dropdown:last-child>.school-dropdown-list{left:auto;right:0;width:420px}
+.school-dropdown>summary:focus-visible{outline:3px solid #d4af37;outline-offset:-3px}
+@media(max-width:991px){.school-utility{padding:0 18px 10px;gap:18px}#school-links.school-menu-list.open{display:flex;flex-direction:column;max-height:55vh;overflow:auto}#school-links.school-menu-list>a,#school-links.school-menu-list>.school-dropdown>summary{padding:12px}.school-dropdown-list,.school-menu-list>.school-dropdown:last-child>.school-dropdown-list{position:static;width:100%;max-width:none;max-height:none;box-shadow:none;border:0;border-radius:5px}.school-dropdown>summary{width:100%}}
+
+/* Enrollment action stays at the right edge beneath the search area. */
+.school-nav-inner{max-width:1380px;margin:0 auto;display:flex;align-items:center;gap:12px;padding-right:32px}
+.school-nav-inner #school-links{flex:1;min-width:0;margin:0;padding-right:0}
+.navbar-enroll{display:inline-flex;align-items:center;justify-content:center;gap:12px;flex-shrink:0;margin:8px 0;padding:10px 18px;border-radius:6px;background:#f7d774;color:#752014;font-size:14px;font-weight:700;white-space:nowrap;border:1px solid #d4af37;min-height:44px}
+.navbar-enroll:hover{background:#ffe49a;color:#752014}
+.navbar-enroll:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:991px){.school-nav-inner{flex-wrap:wrap;gap:0;padding:0 18px}.school-nav-inner .menu-toggle{order:1;flex:1;width:auto;padding-left:0}.school-nav-inner .navbar-enroll{order:2;margin:8px 0;padding:8px 14px}.school-nav-inner #school-links{order:3;flex:0 0 100%;padding:8px 0}}

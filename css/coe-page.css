@@ -1,0 +1,40 @@
+.coe-page { background: #fff; color: #252525; }
+.coe-wrap { max-width: 1240px; padding: 0 28px; }
+.coe-hero { display: grid; grid-template-columns: 1.4fr .8fr; gap: 48px; align-items: center; padding: 48px 0 32px; }
+.coe-kicker { display: block; color: #a8241b; font-size: 11px; font-weight: 700; letter-spacing: .14em; line-height: 1.7; margin-bottom: 14px; }
+.coe-page h2 { font-size: clamp(27px, 3vw, 36px); font-weight: 700; line-height: 1.3; margin: 0 0 24px; }
+.coe-hero h2 { font-size: clamp(33px, 3.7vw, 46px); }
+.coe-page p { color: #62594c; font-size: 15px; line-height: 1.95; margin: 0 0 24px; }
+.coe-page .coe-lead { font-size: 20px; color: #3e3529; line-height: 1.7; }
+.coe-emblem { margin: 0; border: 1px solid #e0d2b4; border-radius: 16px; background: #faf8f3; padding: 24px; text-align: center; }
+.coe-emblem img { display: block; width: 100%; height: auto; max-height: 330px; object-fit: contain; margin: 0 auto 18px; }
+.coe-emblem figcaption { color: #7a6641; font-size: 12px; letter-spacing: .08em; }
+.coe-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 26px; }
+.coe-button { display: inline-flex; align-items: center; gap: 22px; padding: 13px 22px; border-radius: 6px; background: #c92318; color: white; font-size: 14px; font-weight: 700; }
+.coe-button:hover { background: #a42117; color: white; }
+.coe-actions > a:not(.coe-button) { color: #a8241b; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
+.coe-jump { display: flex; gap: 10px; flex-wrap: wrap; padding: 22px 0 28px; border-bottom: 1px solid #e4dac4; }
+.coe-jump a { padding: 9px 15px; border: 1px solid #e0d2b4; border-radius: 24px; color: #665846; font-size: 13px; }
+.coe-jump a:hover { background: #c92318; color: white; border-color: #c92318; }
+.coe-section { padding: 46px 0; border-bottom: 1px solid #e4dac4; scroll-margin-top: calc(var(--site-header-height, 180px) + 24px); }
+.coe-section > p { max-width: 1080px; }
+.coe-section > p:last-child { margin-bottom: 0; }
+.coe-pathway { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+.coe-pathway > div { padding: 26px; border: 1px solid #e0d2b4; border-top: 3px solid #c92318; border-radius: 12px; background: #faf8f3; }
+.coe-pathway span { display: block; color: #a8241b; font-size: 13px; margin-bottom: 20px; }
+.coe-pathway strong { display: block; font-size: 18px; line-height: 1.6; margin-bottom: 12px; }
+.coe-pathway p { font-size: 14px; margin-bottom: 0; }
+.coe-highlight { display: flex; gap: 24px; padding: 28px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.coe-highlight i { color: #b1261d; font-size: 28px; margin-top: 4px; }
+.coe-highlight h3 { font-size: 19px; font-weight: 700; line-height: 1.6; }
+.coe-highlight p { margin-bottom: 0; font-size: 14px; }
+.coe-cta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 32px; margin: 40px 0 10px; border: 1px solid #e0d2b4; border-radius: 12px; background: #faf8f3; }
+.coe-cta h2 { font-size: 25px; margin: 0; }
+.coe-cta .coe-actions { margin: 0; }
+.coe-page a:focus-visible { outline: 3px solid #d4af37; outline-offset: 4px; }
+@media (max-width: 991px) { .coe-hero { grid-template-columns: 1fr; gap: 28px; } .coe-emblem { max-width: 480px; width: 100%; margin: auto; } .coe-pathway { grid-template-columns: 1fr; } }
+@media (max-width: 575px) { .coe-wrap { padding: 0 20px; } .coe-hero, .coe-section { padding: 32px 0; } .coe-hero h2 { font-size: 33px; } .coe-highlight, .coe-cta { padding: 23px; } }
+
+
+/* Original reference banner. */
+.page-header { background-image: linear-gradient(#252525a6, #252525a6), url("../img/coe%202.png"); }

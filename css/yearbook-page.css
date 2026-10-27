@@ -1,0 +1,27 @@
+.yb-page { background: #fff; }
+.yb-wrap { max-width: 1240px; padding: 46px 28px; }
+.yb-kicker { display: block; color: #ad261b; font-size: 11px; letter-spacing: .14em; font-weight: 700; margin-bottom: 14px; }
+.yb-page h2 { font-size: clamp(32px, 4vw, 46px); font-weight: 700; margin-bottom: 18px; }
+.yb-page p { color: #645b4e; font-size: 14px; line-height: 1.8; }
+.yb-filters { display: grid; grid-template-columns: 1.3fr 1fr 1fr auto; align-items: end; gap: 18px; padding: 24px; background: #faf8f4; border: 1px solid #e1d3b5; border-radius: 12px; margin: 28px 0 14px; }
+.yb-filters label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.yb-filters input, .yb-filters select, .yb-controls select { width: 100%; min-height: 46px; padding: 10px 12px; background: white; border: 1px solid #d9c9a7; border-radius: 6px; font-size: 14px; color: #39332a; }
+.yb-filters button, .yb-controls button { min-height: 46px; border: 1px solid #c92318; border-radius: 6px; padding: 10px 20px; background: #c92318; color: white; font-size: 14px; font-weight: 600; cursor: pointer; }
+.yb-filters button { background: white; color: #a7241a; }
+.yb-controls button:disabled { opacity: .4; cursor: default; }
+.yb-viewer { background: radial-gradient(ellipse at center, #f8f5ee, #eae3d5); padding: 30px; border: 1px solid #e1d3b5; border-radius: 14px; touch-action: pan-y; overflow: hidden; }
+.yb-book { position: relative; max-width: 760px; margin: auto; aspect-ratio: 3 / 4; perspective: 1600px; background: #fff; box-shadow: 0 16px 40px #29201424; }
+.yb-book:after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 14px; pointer-events: none; background: linear-gradient(90deg, #31201418, transparent); }
+.yb-book a, .yb-book img { display: block; width: 100%; height: 100%; }
+.yb-book img { object-fit: contain; background: white; }
+.yb-turn-sheet { position: absolute; inset: 0; backface-visibility: hidden; pointer-events: none; z-index: 2; box-shadow: 8px 0 22px #0002; }
+.yb-controls { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: start; gap: 20px; max-width: 800px; margin: 25px auto 0; }
+.yb-controls > div { text-align: center; min-width: 0; }
+.yb-controls p { margin: 8px 0 0; font-size: 12px; }
+.yb-tip { text-align: center; margin: 20px 0 0; }
+.yb-page [hidden] { display: none !important; }
+.yb-page :is(button, input, select, a, .yb-viewer):focus-visible { outline: 3px solid #d4af37; outline-offset: 3px; }
+@media (max-width: 767px) { .yb-filters { grid-template-columns: 1fr; } .yb-viewer { padding: 12px; } .yb-controls { gap: 10px; } .yb-controls button { padding: 10px 12px; } .yb-wrap { padding: 32px 20px; } }
+@media (prefers-reduced-motion: reduce) { .yb-turn-sheet { animation: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .yb-filters { grid-template-columns: 1fr 1fr; } }

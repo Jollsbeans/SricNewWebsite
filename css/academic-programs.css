@@ -1,0 +1,126 @@
+/* Closed until activated; each panel belongs to its own menu tab. */
+#school-links details:not([open]) > .school-dropdown-list {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  #school-links > .school-dropdown {
+    position: relative;
+  }
+
+  #school-links > .school-dropdown > .school-dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    width: 370px;
+    max-width: calc(100vw - 64px);
+    display: block;
+    columns: auto;
+    padding: 18px;
+  }
+
+  #school-links > .school-dropdown > .school-dropdown-list > li {
+    grid-column: auto;
+    grid-row: auto;
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  #school-links .school-submenu > .school-dropdown-list {
+    position: static;
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  #school-links > .school-dropdown > .school-dropdown-list {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    columns: auto;
+  }
+}
+
+/* Restore the two-column desktop panels, including Academic Programs. */
+@media (min-width: 992px) {
+  #school-links > .school-dropdown > .school-dropdown-list {
+    width: 740px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 28px;
+    padding: 24px;
+  }
+
+  /* About: ordinary links on the left, awards group on the right. */
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:not(:last-child) {
+    grid-column: 1;
+  }
+
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:last-child {
+    grid-column: 2;
+    grid-row: 1 / span 5;
+    border-left: 1px solid #e5e0d6;
+    padding-left: 24px;
+  }
+
+  /* Program groups keep their own click-to-expand controls. */
+  #school-links > .academic-programs > .school-dropdown-list {
+    row-gap: 12px;
+    align-items: start;
+  }
+
+  #school-links > .academic-programs > .school-dropdown-list > li:nth-child(2) {
+    border-left: 1px solid #e5e0d6;
+    padding-left: 24px;
+  }
+}
+
+/* About: three introductory links left; chart, alumni and awards right. */
+@media (min-width: 992px) {
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:nth-child(-n + 3) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:nth-child(n + 4) {
+    grid-column: 2;
+    border-left: 1px solid #e5e0d6;
+    padding-left: 24px;
+  }
+
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:nth-child(4) {
+    grid-row: 1;
+  }
+
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:nth-child(5) {
+    grid-row: 2;
+  }
+
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:last-child {
+    grid-row: 3;
+  }
+
+  /* Academic Programs is a single stack of expandable program groups. */
+  #school-links > .academic-programs > .school-dropdown-list {
+    width: 430px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px 0;
+  }
+
+  #school-links > .academic-programs > .school-dropdown-list > li,
+  #school-links > .academic-programs > .school-dropdown-list > li:nth-child(2) {
+    grid-column: 1;
+    grid-row: auto;
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+/* Facilities completes the left About column; awards stays on the right. */
+@media (min-width: 992px) {
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li:nth-child(6) { grid-column: 2; grid-row: 3; }
+  #school-links > .school-dropdown:first-of-type > .school-dropdown-list > li.facilities-nav-item:last-child { grid-column: 1; grid-row: 4; border-left: 0; padding-left: 0; }
+}
