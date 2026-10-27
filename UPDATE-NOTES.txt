@@ -1,0 +1,18 @@
+All 48 HTML headers now say The Home of the Champions. School contact numbers and clickable phone links use 501-4308; placeholder footer phone numbers were replaced. Shared search text was updated.
+
+This is a complete website package. Extract it into a new folder and open index.html with Live Server. Your original Downloads folder was not modified. All CSS, JavaScript, images, libraries, program files and license files were retained.
+
+Unreferenced support files omitted from this package:
+IMAGE-ENHANCEMENT-PROMPT.txt
+IMAGE-ENHANCEMENT-PROMPTS.txt
+news-content.json
+READ-ME.txt
+yearbook-name-review.csv
+4k-exports/post-1-4k.jpg
+4k-exports/post-2-4k.jpg
+4k-exports/post-3-4k.jpg
+4k-exports/post-4-4k.jpg
+4k-exports/post-5-4k.jpg
+4k-exports/post-6-4k.jpg
+
+Keep your original copies of review data and 4K exports for future editing.

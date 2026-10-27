@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>St. Robert’s International College</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/sric-logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+<link href="css/redesign.css" rel="stylesheet">
+<link rel="stylesheet" href="css/page-experience.css">
+<link rel="stylesheet" href="css/navbar-menu.css">
+<link rel="stylesheet" href="css/iau-navigation.css">
+<link rel="stylesheet" href="css/navbar-footer-update.css">
+<style>
+/* Alternative page design: generous whitespace and alternating image collages. */
+.purpose-page{background:#fff;color:#252525}
+.purpose-intro{padding:64px 24px 60px;text-align:center;background:#faf8f3;border-bottom:1px solid #eee8dc}
+.purpose-eyebrow{display:block;font-size:11px;letter-spacing:.18em;font-weight:700;color:#9e251b;margin-bottom:18px}
+.purpose-intro h1{margin:0;font-size:clamp(36px,5vw,62px);line-height:1.15;font-weight:700;letter-spacing:-.045em}
+.purpose-intro h1 span{font-weight:400;color:#b58b25}
+.purpose-intro-rule{height:3px;width:52px;background:#c92318;margin:26px auto 0}
+.purpose-container{max-width:1240px;margin:auto;padding:0 32px}
+.purpose-section{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(32px,6vw,88px);padding:80px 0}
+.purpose-section+.purpose-section{border-top:1px solid #e9e3d6}
+.purpose-copy{position:relative;max-width:510px}
+.purpose-index{display:block;color:#a59778;font-size:13px;font-weight:600;letter-spacing:.12em;margin-bottom:22px}
+.purpose-copy h2{font-size:clamp(32px,4vw,48px);line-height:1.15;font-weight:700;margin:0;letter-spacing:-.035em}
+.purpose-rule{display:block;width:40px;height:3px;background:#c92318;margin:24px 0}
+.purpose-copy p{font-size:clamp(17px,1.55vw,20px);line-height:1.9;margin:0;color:#59564f}
+.purpose-gallery{display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:410px;min-width:0}
+.purpose-gallery img{display:block;width:100%;height:100%;min-height:0;object-fit:contain;background:#f4f1ea;border:0;border-radius:10px}
+.purpose-gallery img:first-of-type{grid-row:1/span 2}
+.purpose-section-2{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+.purpose-section-2 .purpose-gallery{grid-column:1;grid-row:1}
+.purpose-section-2 .purpose-copy{grid-column:2;grid-row:1}
+@media(max-width:991px){.purpose-container{padding:0 24px}.purpose-section,.purpose-section-2{grid-template-columns:1fr;gap:32px;padding:48px 0}.purpose-copy{max-width:720px}.purpose-section-2 .purpose-gallery,.purpose-section-2 .purpose-copy{grid-column:auto;grid-row:auto}.purpose-gallery{height:360px;max-width:720px;width:100%}.purpose-intro{padding:44px 20px}.purpose-copy p{font-size:17px}}
+@media(max-width:575px){.purpose-container{padding:0 20px}.purpose-eyebrow{font-size:9px;letter-spacing:.12em}.purpose-gallery{height:290px;gap:10px}.purpose-gallery img{border-radius:6px}.purpose-index{margin-bottom:14px}.purpose-rule{margin:20px 0}.purpose-copy p{font-size:16px;line-height:1.85}}
+</style>
+<style>
+/* Equal photo cards: two above and one centered underneath. */
+.purpose-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    height: auto;
+    min-width: 0;
+    padding: 12px 0;
+}
+.purpose-gallery img,
+.purpose-gallery img:first-of-type {
+    display: block;
+    flex: 0 0 calc((100% - 16px) / 2);
+    width: calc((100% - 16px) / 2);
+    max-width: calc((100% - 16px) / 2);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #d8c79e;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(37, 37, 37, 0.09);
+    grid-row: auto;
+}
+@media (max-width: 575px) {
+    .purpose-gallery { gap: 12px; padding: 8px 0; }
+    .purpose-gallery img,
+    .purpose-gallery img:first-of-type {
+        flex-basis: calc((100% - 12px) / 2);
+        width: calc((100% - 12px) / 2);
+        max-width: calc((100% - 12px) / 2);
+        border-radius: 9px;
+        padding: 4px;
+    }
+}
+</style>
+  <!-- Grouped Academic Programs dropdown -->
+  <link rel="stylesheet" href="css/academic-programs.css">
+  <!-- Explicit About menu rows prevent Facilities/Awards overlap. -->
+  <link rel="stylesheet" href="css/about-menu-layout.css">
+  <link rel="stylesheet" href="css/yearbook-navigation.css">
+  <link rel="stylesheet" href="css/permit-navigation.css">
+  <!-- III@SRIC navigation panel -->
+  <link rel="stylesheet" href="css/iii-sric-navigation.css">
+</head>
+
+<body>
+<div class="page-loader" role="status" aria-label="Loading page"><div class="loader-content"><img src="img/sric-logo.png" alt="" width="76" height="76"><span class="loader-ring" aria-hidden="true"></span><strong>St. Robert’s International College</strong><span>Loading, please wait…</span></div></div>
+    
+
+
+    <header class="site-header">
+  <div class="school-topbar">
+    <div class="school-topbar-inner">
+      <nav class="school-utility" aria-label="Quick links">
+        <a href="contact.html">Contact</a>
+        <a href="payment.html">Payments</a>
+        
+        <a class="navbar-enroll" href="https://docs.google.com/forms/d/e/1FAIpQLSdnYhT2T36PfeuEqeEJQfyn9DJow9mmuneHO3dCj1L-lajg_Q/viewform">Enroll Now! <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </div>
+  <div class="brand-row">
+    <a class="school-brand" href="index.html">
+      <img src="img/sric-logo.png" alt="St. Robert's International College crest">
+      <span>
+        <strong>St. Robert’s International College</strong>
+        <small>The Home of the Champions</small>
+      </span>
+    </a>
+    <form class="site-search" role="search">
+      <label class="visually-hidden" for="site-query">Search this website</label>
+      <input id="site-query" type="search" placeholder="Search the school…" required maxlength="120">
+      <button aria-label="Search" type="submit">Search</button>
+    </form>
+  </div>
+  <nav class="school-nav" aria-label="Main navigation">
+    <div class="school-nav-inner">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="school-links">Menu ☰</button>
+      <div id="school-links" class="school-menu-list">
+        <div class="mobile-menu-heading">
+          <strong>Explore SRIC</strong>
+          <button type="button" class="mobile-menu-close" aria-label="Close navigation">✕</button>
+        </div>
+        <a href="index.html">Home</a>
+        <details class="school-dropdown">
+          <summary>About <span aria-hidden="true">⌄</span></summary>
+          <ul class="school-dropdown-list about-menu-columns">
+            <li data-about-position="1">
+              <a href="about.html">About SRIC</a>
+            </li>
+            <li data-about-position="2">
+              <a href="founder.html">The Founder</a>
+            </li>
+            <li data-about-position="3">
+              <a href="mission_vission.html">Vision and Mission</a>
+            </li>
+            <li class="permit-nav-item" data-about-position="4">
+              <a href="permits.html">Permit</a>
+            </li>
+            <li data-about-position="5">
+              <a href="organizational_chart.html">Organizational Chart</a>
+            </li>
+            <li data-about-position="6">
+              <a href="Alumni.html">Alumni</a>
+            </li>
+            <li class="facilities-nav-item" data-about-position="7">
+              <a href="facilities.html">Facilities</a>
+            </li>
+            <li class="awards-nav-item" data-about-position="8">
+              <details class="school-dropdown school-submenu">
+                <summary>SRIC Awards and Recognition <span aria-hidden="true">⌄</span></summary>
+                <ul class="school-dropdown-list">
+                  <li>
+                    <a href="worldsummit.html">World School Summit</a>
+                  </li>
+                  <li>
+                    <a href="nla.html">National Literacy</a>
+                  </li>
+                  <li>
+                    <a href="asian.html">Asian Awards</a>
+                  </li>
+                  <li>
+                    <a href="sage.html">Sage World Cup</a>
+                  </li>
+                  <li>
+                    <a href="micup.html">Mic Up</a>
+                  </li>
+                  <li>
+                    <a href="panda.html">Panda Rockets Sports Program</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+        <details class="school-dropdown academic-programs">
+          <summary>Academic Programs <span aria-hidden="true">⌄</span></summary>
+          <ul class="school-dropdown-list">
+            <li>
+              <details class="school-dropdown school-submenu">
+                <summary>SHS IBP / SMC <span aria-hidden="true">⌄</span></summary>
+                <ul class="school-dropdown-list">
+                  <li>
+                    <a href="ibp-smc.html">International Business Program / Southern Manila Consortium</a>
+                  </li>
+                  <li>
+                    <a href="bcr.html">Kinder</a>
+                  </li>
+                  <li>
+                    <a href="elem.html">IBP Grade 1 - 6</a>
+                  </li>
+                  <li>
+                    <a href="lfb.html">IBP Grade 7 - 10</a>
+                  </li>
+                  <li>
+                    <a href="rfgds.html">IBP Grade 11 - 12</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="school-dropdown school-submenu">
+                <summary>SHS (OHS) &amp; ESMSG <span aria-hidden="true">⌄</span></summary>
+                <ul class="school-dropdown-list">
+                  <li>
+                    <a href="shs.html">Regular Senior High School / Esteban S. Madrona School of Governance</a>
+                  </li>
+                  <li>
+                    <a href="romblon.html">Grade 11 - 12</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="school-dropdown school-submenu">
+                <summary>SHS (ALS) &amp; NCIP <span aria-hidden="true">⌄</span></summary>
+                <ul class="school-dropdown-list">
+                  <li>
+                    <a href="ncip.html">Alternative Delivery Modality / National Commission for Indigenous People</a>
+                  </li>
+                  <li>
+                    <a href="als-ncip.html">Grade 11 - 12</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="school-dropdown school-submenu">
+                <summary>SHS (NCIP) <span aria-hidden="true">⌄</span></summary>
+                <ul class="school-dropdown-list">
+                  <li>
+                    <a href="regular_shs.html">Regular SHS</a>
+                  </li>
+                  <li>
+                    <a href="fast_track.html">Fast Track SHS</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+        <details class="school-dropdown">
+          <summary>TESDA &amp; RCTP <span aria-hidden="true">⌄</span></summary>
+          <ul class="school-dropdown-list">
+            <li>
+              <a href="hed.html">Higher Education Department / Robertine Center for TechnoPreneurship</a>
+            </li>
+            <li>
+              <a href="cyber-security.html">Cyber Security</a>
+            </li>
+            <li>
+              <a href="supply-chain.html">Supply Chain Management</a>
+            </li>
+            <li>
+              <a href="smart-city.html">SMART City Development</a>
+            </li>
+            <li>
+              <a href="digital-engineering.html">Digital Engineering</a>
+            </li>
+          </ul>
+        </details>
+        <details class="school-dropdown iii-sric-menu">
+          <summary>III@SRIC <span aria-hidden="true">⌄</span></summary>
+          <ul class="school-dropdown-list">
+            <li>
+              <details class="school-dropdown school-submenu">
+                <summary>Capacity Building <span aria-hidden="true">⌄</span></summary>
+                <ul class="school-dropdown-list">
+                  <li>
+                    <a href="tour_bkk.html">International Tour-BKK</a>
+                  </li>
+                  <li>
+                    <a href="rajabat.html">MPA &amp; Doctorate - Rajabhat</a>
+                  </li>
+                  <li>
+                    <a href="eteeap.html">ETTEAP</a>
+                  </li>
+                <li><a href="degree_iau.html">Degree by IAU</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+        <details class="school-dropdown">
+          <summary>University Partners <span aria-hidden="true">⌄</span></summary>
+          <ul class="school-dropdown-list">
+            <li>
+              <a href="rmuti.html">Rajamangala University of Technology (RMUT Phra Nakhon &amp; Isan), Thailand</a>
+            </li>
+            <li>
+              <a href="coe.html">Engineering Council of Thailand (ECT), Thailand</a>
+            </li>
+            <li>
+              <a href="nwssu.html">Northwest Samar State University (NwSSU), Calbayog City, Philippines</a>
+            </li>
+            <li>
+              <a href="feu.html">FEU Roosevelt (FEU-R), Marikina, Rizal, Philippines</a>
+            </li>
+            <li>
+              <a href="dalta.html">University of Perpetual Help System DALTA (UPHSD), Manila, Philippines</a>
+            </li>
+            <li>
+              <a href="iau.html">International American University (IAU), Los Angeles, California, USA</a>
+            </li>
+            <li>
+              <a href="csi.html">Cusco Standardization International (CSI), Seoul, South Korea</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+      <a class="navbar-yearbook" href="yearbook.html">Yearbook</a>
+    </div>
+  </nav>
+</header><button class="school-menu-backdrop" type="button" aria-label="Close navigation" hidden></button><section class="search-panel" hidden aria-label="Search results"><div class="search-panel-head"><h2>Search results</h2><button type="button" class="close-search" aria-label="Close search results">Close ✕</button></div><p class="search-summary" role="status"></p><div class="search-items"></div></section>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-4 text-white animated slideInDown mb-3">Mission & Vission</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+          
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <main class="purpose-page">
+    <div class="purpose-container"><section class="purpose-section purpose-section-1" aria-labelledby="purpose-1">
+         <div class="purpose-copy">
+            <h2 id="purpose-2">Mission</h2>
+            <span class="purpose-rule" aria-hidden="true"></span>
+            <p>We deliver transformative education that sustains Filipino virtues, provides exposure to international programs and standards, and produces world-class graduates imbued with 21st century skills.</p>
+        </div>
+        <div class="purpose-gallery"><!-- Replace this src with your mission image 1, for example img/mission-1.jpg. -->
+<img src="img/image20.jpg" alt="Mission image 1" width="640" height="480" loading="lazy">
+<!-- Replace this src with your mission image 2, for example img/mission-2.jpg. -->
+<img src="img/intprogram1.jpg" alt="Mission image 2" width="640" height="480" loading="lazy">
+<!-- Replace this src with your mission image 3, for example img/mission-3.jpg. -->
+<img src="img/mission1.jpg" alt="Mission image 3" width="640" height="480" loading="lazy"></div>
+      
+    </section><section class="purpose-section purpose-section-2" aria-labelledby="purpose-2">
+        <div class="purpose-copy">
+            <h2 id="purpose-1">Vision</h2>
+            <span class="purpose-rule" aria-hidden="true"></span>
+            <p>We lead the way towards excellent, world-class, God-centered and learner-oriented education.</p>
+        </div>
+        <div class="purpose-gallery"><!-- Replace this src with your vision image 1, for example img/vision-1.jpg. -->
+<img src="img/vission1.jpg" alt="Vision image 1" width="640" height="480" loading="lazy">
+<!-- Replace this src with your vision image 2, for example img/vision-2.jpg. -->
+<img src="img/intprogram3.jpg" alt="Vision image 2" width="640" height="480" loading="lazy">
+<!-- Replace this src with your vision image 3, for example img/vision-3.jpg. -->
+<img src="img/vission2.jpg" alt="Vision image 3" width="640" height="480" loading="lazy"></div>
+                  
+    </section></div>
+</main>
+<!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>E. Lopez Street, Jaro, Iloilo City</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>501-4308</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@sric.edu.ph</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">The Founder</a>
+                    <a class="btn btn-link" href="">Vison and Mission</a>
+                    <a class="btn btn-link" href="organizational_chart.html">Organizational Chart</a>
+                </div>
+
+                  <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/image1.jpg" alt="School community and campus">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/image7.png" alt="School community and campus">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/image3.png" alt="School community and campus">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/image4.png" alt="School community and campus">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/image5.png" alt="School community and campus">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/image6.png" alt="School community and campus">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Contact Us</h5>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email" aria-label="Your email address">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-newsletter>Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container pb-5 sric-footer-map" aria-label="School location"><h5 class="text-light mb-3">Visit Us </h5><div class="sric-map-frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.721421639662!2d122.55591857479183!3d10.721663360201948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee56ec6b1d2db%3A0xdfb171f8f4455d4a!2sSt.%20Robert's%20International%20College!5e1!3m2!1sen!2sph!4v1792386309290!5m2!1sen!2sph" width="600" height="450" title="St. Robert’s International College location on Google Maps" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></section>
+<div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#"> St. Robert's International College</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+<script src="js/page-experience.js"></script>
+<script src="js/search-index.js"></script><script src="js/site.js"></script>
+<script src="js/navbar-menu.js"></script>
+</body>
+
+</html>
